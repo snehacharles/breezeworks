@@ -22,7 +22,10 @@ export default function Navbar() {
           Breeze<span>Works.</span>
         </Link>
 
-        <nav className={`nav-links ${menuOpen ? "active" : ""}`}>
+        <nav
+          id="site-navigation"
+          className={`nav-links ${menuOpen ? "active" : ""}`}
+        >
           {navLinks.map((link) => (
             <Link
               key={link.name}
@@ -42,6 +45,8 @@ export default function Navbar() {
           className="menu-toggle"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle navigation"
+          aria-expanded={menuOpen}
+          aria-controls="site-navigation"
         >
           {menuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>

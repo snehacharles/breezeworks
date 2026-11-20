@@ -109,7 +109,7 @@ export default function BookingSection() {
                   value={form.phone}
                   onChange={handleChange}
                   placeholder="Enter your phone number"
-                  pattern="[0-9+\s()-]{7,18}"
+                  pattern="[0-9+\s\(\)\-]{7,18}"
                   required
                 />
               </label>

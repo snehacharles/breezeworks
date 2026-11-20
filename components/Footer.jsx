@@ -4,7 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="footer" id="contact">
+    <footer className="footer">
       <div className="footer-container">
         <div className="footer-top">
           <div className="footer-brand">
@@ -28,14 +28,14 @@ export default function Footer() {
 
           <div className="footer-links">
             <h4>Get Started</h4>
-            <Link href="/booking">Book a Service</Link>
+            <Link href="#booking">Book a Service</Link>
             <Link href="#services">Explore Services</Link>
           </div>
         </div>
 
         <div className="footer-bottom">
           <p>© 2026 BreezeWorks. All rights reserved.</p>
-          <Link href="/booking">
+          <Link href="#booking">
             Let's talk about your AC needs
             <ArrowUpRight size={16} />
           </Link>

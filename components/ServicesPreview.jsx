@@ -81,7 +81,7 @@ export default function ServicesPreview() {
         <div className="services-bottom">
           <p>Looking for the right cooling solution?</p>
 
-          <a href="/booking">
+          <a href="#booking">
             Book a Service
           </a>
         </div>
